@@ -7,7 +7,13 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.view3',
   'myApp.version',
-  'myApp.seat'
+  'myApp.seat',
+  'myApp.login',
+  'myApp.flight',
+  'myApp.overview',
+  'myApp.checkIn',
+  'myApp.matches',
+  'myApp.flightOptions',
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});

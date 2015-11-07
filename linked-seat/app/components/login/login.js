@@ -1,12 +1,12 @@
 'use strict';
 
 angular
-	.module('myApp.seat', [])
-	.directive('seatList', function() {
+	.module('myApp.login', [])
+	.directive('login', function() {
 		var controller = function($scope){
 
 	//seat list
-		$scope.items = [{
+		/*$scope.items = [{
 			id: 1,
 		    name: 'Beyonce',
 		    price: 70000,
@@ -50,7 +50,7 @@ angular
 		    status: "reserved",
 		    pic: "",
 		    linkLinkedIn: " "
-		  }];
+		  }];*/
 
 		  //
 
@@ -58,7 +58,7 @@ angular
 
 		return {
 			scope: {},
-			templateUrl: 'components/seat/seatList.html',
+			templateUrl: 'components/login/login.html',
 			link: controller
 			//controller of the scope in productList.html is the var controller created above
 

@@ -1,0 +1,29 @@
+.move-down{
+	margin-top: 20vh;
+}
+		.login{
+			text-align: center;
+			padding: 20px;
+			display: block;
+			margin: 0px auto;
+			background-color: rgba(240, 240, 243, 0.68);
+			border-radius: 25px;
+			box-shadow: 1px -2px 5px grey; 
+
+			button{
+
+				height: 40px;
+				width: 60%;
+				margin-top: 20px;
+				margin-bottom: 40px;
+				background-color: white;
+				border: none;
+				box-shadow: 1px -2px 5px grey;
+				border-radius: 25px; 
+				  //box-shadow: 3px 3px 10px #888888;
+				img{
+					max-width: 80%;
+					max-height: 35px;
+				}
+			}
+		}

@@ -1,30 +1,40 @@
 'use strict';
 
 angular
-	.module('myApp.seat', [])
-	.directive('seatList', function() {
+	.module('myApp.flightOptions', [])
+	.directive('optionsList', function() {
 		var controller = function($scope){
 
 	//seat list
 		$scope.items = [{
-			id: 1,
-		    name: 'Beyonce',
-		    price: 70000,
-		    description: 'first-class',
-		    status: "reserved",
-		    pic: "",
-		    linkLinkedIn: " "
+
+				id: 1,
+			    name: 'Luggage',
+			    price: 7,
+			    description: 'first-class',
+			    status: "reserved"
+			
 		  },
 		  {
-		    id: 2,
-		    name: 'Shakira',
-		    price: 600,
-		    description: 'first-class',
-		    status: "reserved",
-		    pic: "",
-		    linkLinkedIn: " "
+		  		id: 2,
+			    name: 'Something else',
+			    price: 7,
+			    description: 'first-class',
+			    status: "reserved"
+			    
+
+		  	
 		  },
 		  {
+		  		id: 3,
+			    name: 'Connect to LinkedIn',
+			    price: 7,
+			    description: 'first-class',
+			    status: "reserved"
+
+		  	
+		  }
+		  /*{
 		    id: 3,
 		    name: 'Benedict',
 		    price: 700,
@@ -50,7 +60,7 @@ angular
 		    status: "reserved",
 		    pic: "",
 		    linkLinkedIn: " "
-		  }];
+		  }*/];
 
 		  //
 
@@ -58,10 +68,12 @@ angular
 
 		return {
 			scope: {},
-			templateUrl: 'components/seat/seatList.html',
+			templateUrl: 'components/flightOptions/optionsList.html',
 			link: controller
 			//controller of the scope in productList.html is the var controller created above
 
 		}
 	})
-	.controller('arrangeSeats', function(){})
+	.controller('setOptions', function(){
+		
+	})

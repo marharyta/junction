@@ -1,0 +1,215 @@
+
+.gradient{
+	background: -webkit-linear-gradient(white, lightblue, #0077FF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, lightblue, #0077FF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, lightblue, #0077FF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, lightblue, #0077FF); /* Standard syntax */
+}
+.findFlight{
+
+	background-color: rgba(240, 240, 243, 0.68);
+	border-radius: 25px; 
+	box-shadow: 1px -1px 1px grey; 
+	padding: 20px;
+	margin-top: 20px;
+	min-height: 50vh; 
+
+	.from{
+		position: relative;
+		left: 50px;
+	}
+
+	.to{
+		margin-bottom: 60px;
+
+		img{
+			-ms-transform: rotate(35deg); /* IE 9 */
+		    -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
+		    transform: rotate(35deg);
+		}
+	}
+	img{
+			max-width: 70px;
+			max-height: 50px;
+			margin-left: 60px;
+			margin-right: 10px;
+
+		}
+
+		img, span {
+			display: inline-block;
+		}
+
+	form{
+
+		
+		margin-bottom: 30px;
+		input{
+			display: block;
+			margin-left: 60px;
+
+    		background: rgba(255,255,255,0.5);
+    		padding-left: 10px;
+  
+
+		}
+
+		input{
+			height: 60px;
+			width: 60%;
+
+		}
+		
+	}
+
+	.next{
+		display: block;
+		margin: 0px auto;
+		img{
+			display: block;
+			display: block;
+		margin: 0px auto;
+		}
+	}
+
+
+		
+
+}
+
+.listOfREsults{
+
+	background-color: rgba(240, 240, 243, 0.68);
+		border-radius: 25px; 
+		padding: 20px;
+		box-shadow: 1px -2px 5px grey; 
+		font-family: 'Arvo', serif;
+		min-height: 50vh; 
+
+	ul{
+		
+		margin-bottom: 30px;
+
+		li{
+			display: inline-block;
+			width: 27%;
+			height: 100%;
+			margin-right: 5%;
+			margin-bottom: 10px;
+			border-right: dotted;
+			border-bottom: 1px dotted black;
+			border-size: 2px;
+
+			h3{
+				margin-bottom: 3px;
+			}
+
+			.date{
+				margin-bottom: 12px;
+			}
+				.departure{
+					display: inline-block;
+					
+						font-size: 16px;
+						font-weight: 500;
+					
+				}
+				.arrival{
+					display: inline-block;
+					
+						font-size: 16px;
+						font-weight: 500;
+				}
+
+				.price{
+					margin-top: 10px;
+					font-size: 16px;
+						font-weight: 500;
+				}
+
+				img{
+					max-width: 30px;
+					position: relative;
+					padding: 0px 3px;
+					top: -10px;
+				}
+		}
+	}	
+}
+
+#continue{
+	margin: 30px auto 30px auto;
+			display: block;
+			min-width: 90px;
+			height: 60px;
+			padding: 0px 60px;
+			//border-radius: 10px; 
+			background-color: rgba(240, 240, 243, 0.68)	;
+			border-shadow: none;
+			border: none;
+
+			//second
+			//margin: 0px auto 30px auto;
+			display: block;
+			min-width: 90px;
+			height: 50px;
+			padding: 0px 60px;
+			//border-radius: 10px; 
+			background-color: rgba(240, 240, 243, 0.68);;
+			box-shadow: 0px -0.5px 5px grey; 
+			border: none;
+			border-bottom: 1px solid black;
+}
+
+
+.flightOpt{
+	
+	text-align: center;
+	background-color: rgba(240, 240, 243, 0.68);
+		border-radius: 25px; 
+		padding: 20px;
+		box-shadow: 1px -2px 5px grey; 
+		min-height: 50vh; 
+	div{
+		padding: 20px;
+		display: block;
+
+	}
+
+	
+
+	.pics div{
+		display: inline-block;
+			border-radius: 100px;
+			width: 80px;
+			height: 80px;
+			background-color: pink;
+			margin-right: 20px;
+
+			
+	}
+	#gwen{
+				
+				background: url("../../img/gwe.jpg") no-repeat center center; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+			}
+}
+
+
+.overview{
+	text-align: center;
+	background-color: rgba(240, 240, 243, 0.68);
+		border-radius: 25px; 
+		padding: 20px;
+		box-shadow: 1px -2px 5px grey; 
+		min-height: 50vh; 
+	
+
+	
+			
+	
+
+}

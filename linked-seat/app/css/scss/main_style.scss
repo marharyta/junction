@@ -1,0 +1,12 @@
+/*Imported sass mixind for cross browser stuff: see http://bourbon.io/*/
+//@import 'vendor/bourbon-master/app/assets/stylesheets/bourbon';
+
+/*Imported bootstrap with sass*/
+@import '../bower_components/bootstrap/dist/css/bootstrap.min.css';
+
+//@import 'vendor/bourbon-master/app/assets/stylesheets/bourbon';
+/*Here are imported files */
+@import 'layout';
+@import 'login';
+@import 'flightbooking';
+@import 'button';
