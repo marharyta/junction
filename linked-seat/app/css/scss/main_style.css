@@ -178,9 +178,16 @@
     width: 80px;
     height: 80px;
     background-color: pink;
-    margin-right: 20px; }
+    margin-right: 20px;
+    border: 2.7px solid white; }
   .flightOpt #gwen {
     background: url("../../img/gwe.jpg") no-repeat center center;
+    background-size: cover; }
+  .flightOpt #man {
+    background: url("../../img/kristian.jpg") no-repeat center center;
+    background-size: cover; }
+  .flightOpt #ben {
+    background: url("../../img/ben.jpg") no-repeat center center;
     background-size: cover; }
 
 .overview {

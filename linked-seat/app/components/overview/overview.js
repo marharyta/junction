@@ -13,58 +13,58 @@ angular
 
 	//flight list
 		$scope.items = [{
-			flight1:{
 
-				id: "A123",
+				id: "A12345",
 			    from: 'Helsinki',
 			    to: "Prague",
-			    departure: "22 Dec",
-			    arrival: "22 Dec",
-			    price: 300,
+			    date: "21 Dec 2015",
+			    departure: "11:20 AM",
+			    arrival: "13:20 PM",
+			    price: 678,
 			    description: 'first-class',
 			    status: "free"
-			}
+		
 		  },
 		  {
-		  	flight2:{
-		  		id: "A135",
-			    from: 'Prague',
-			    to: "Helsinki",
-			    departure: "25 Dec",
-			    arrival: "26 Dec",
-			    price: 300,
+		  
+		  		id: "A12345",
+			    from: 'Helsinki',
+			    to: "Prague",
+			    date: "21 Dec 2015",
+			    departure: "11:20 AM",
+			    arrival: "13:20 PM",
+			    price: 678,
 			    description: 'first-class',
 			    status: "free"
-		  	}
+		  	
 		    
-		  }
-		  /*{
-		    id: 3,
-		    name: 'Benedict',
-		    price: 700,
-		    description: 'first-class',
-		    status: "reserved",
-		    pic: "",
-		    linkLinkedIn: " "
 		  },
 		  {
-		    id: 6,
-		    name: 'Andre',
-		    price: 800,
-		    description: 'first-class',
-		    status: "reserved",
-		    pic: "",
-		    linkLinkedIn: " "
+			  
+				id: "A12345",
+			    from: 'Helsinki',
+			    to: "Prague",
+			    date: "21 Dec 2015",
+			    departure: "11:20 AM",
+			    arrival: "13:20 PM",
+			    price: 678,
+			    description: 'first-class',
+			    status: "free"
+				
 		  },
 		  {
-		    id: 7,
-		    name: 'JLo',
-		    price: 8000,
-		    description: 'first-class',
-		    status: "reserved",
-		    pic: "",
-		    linkLinkedIn: " "
-		  }*/];
+			  
+				id: "A12345",
+			    from: 'Helsinki',
+			    to: "Prague",
+			    date: "21 Dec 2015",
+			    departure: "11:20 AM",
+			    arrival: "13:20 PM",
+			    price: 678,
+			    description: 'first-class',
+			    status: "free"
+				
+		  }];
 
 		  //
 
@@ -78,7 +78,4 @@ angular
 
 		}
 	})
-	.controller('selectFlight', function ($scope){
-
-
-});
+	.controller('selectFlight', function(){});

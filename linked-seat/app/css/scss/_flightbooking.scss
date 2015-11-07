@@ -185,12 +185,31 @@
 			height: 80px;
 			background-color: pink;
 			margin-right: 20px;
+			border: 2.7px solid white;
 
 			
 	}
 	#gwen{
 				
 				background: url("../../img/gwe.jpg") no-repeat center center; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+			}
+
+			#man{
+				
+				background: url("../../img/kristian.jpg") no-repeat center center; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+			}
+
+				#ben{
+				
+				background: url("../../img/ben.jpg") no-repeat center center; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;

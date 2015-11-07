@@ -6,15 +6,23 @@
 			<div class="col-lg-8 col-lg-offset-2 col-md-12">
 				<h1>Book flight</h1>
 				<div class=" row findFlight">
-					<form class="col-lg-6 from">
+					<form class="col-lg-6 from" ng-controller="selectFlight">
 						<img src="img/plane1.svg">
 						<span>From:</span><br>
-						<input list="flight" name="from" value="Helsinki">
+						<input type="text" list="flights" name="flightFrom" name="from" value="Helsinki">
+						<datalist id="flights">
+						    <option ng-repeat="item in flights track by $index" ng-click="setChange(flight)" ng-model="flight.from" ng-change="change()"
+                             value="{{flights.from}}">
+						  </datalist>
 					</form> 
-					<form class="col-lg-6 to">
+					<form class="col-lg-6 to" ng-controller="selectFlight">
 						<img src="img/plane1.svg">
 						<span>To:</span><br>
-						<input list="flight" name="from" value="Prague">
+						<input type="text" list="flights" name="flightTo" name="to" value="Prague" ng-model="flight.to" ng-change="change()">
+						<datalist id="flights">
+						    <option ng-repeat="item in flights track by $index" ng-click="setChange(flight)"
+                             value="{{flights.to}}">
+						  </datalist>
 					</form> 
 					<!--<button id="search" onclick="searchClick()"> Search</button>-->
 					<div class="next">
@@ -27,95 +35,25 @@
 		
 		<!-- DEBUG LINKING__! -->
 		<!--Show search results -->
-		<div class="row" id="searchResult" ng-hide="myVar">
+		<div class="row" id="searchResult">
 			<div class="col-lg-8 col-lg-offset-2 col-md-6">
 				<div class="listOfREsults">
 					<ul>
-						<li> <h3>A12345</h3>
+						<li ng-repeat="flight in flights"> <h3>{{flights.id}}</h3>
 							<div class="date">
-								<small>21 Dec 2015</small>
+								<small>{{flights.date}}</small>
 							</div>
 							<div class="departure">
-								<span>Helsinki</span><br>
-								<span>11:20 AM</span> 
+								<span>{{flights.from}}</span><br>
+								<span>{{flights.daparture}}</span> 
 							</div>
 							<img src="img/plane2.svg">
 							<div class="arrival">
-								<span>Prague</span><br>
-								<span>13:20 PM</span> 
+								<span>{{flights.to}}</span><br>
+								<span>{{flights.arrival}}</span> 
 							</div>
 							<div class="price">
-								<span>120 e</span>
-							</div>
-						</li>
-						<li> <h3>A12345</h3>
-							<div class="date">
-								<small>21 Dec 2015</small>
-							</div>
-							<div class="departure">
-								<span>Helsinki</span><br>
-								<span>11:20 AM</span> 
-							</div>
-							<img src="img/plane2.svg">
-							<div class="arrival">
-								<span>Prague</span><br>
-								<span>13:20 PM</span> 
-							</div>
-							<div class="price">
-								<span>120 e</span>
-							</div>
-						</li>
-						<li> <h3>A12345</h3>
-							<div class="date">
-								<small>21 Dec 2015</small>
-							</div>
-							<div class="departure">
-								<span>Helsinki</span><br>
-								<span>11:20 AM</span> 
-							</div>
-							<img src="img/plane2.svg">
-							<div class="arrival">
-								<span>Prague</span><br>
-								<span>13:20 PM</span> 
-							</div>
-							<div class="price">
-								<span>120 e</span>
-							</div>
-						</li>
-						<li> <h3>A12345</h3>
-							<div class="date">
-								<small>21 Dec 2015</small>
-							</div>
-						
-							<div class="departure">
-								<span>Helsinki</span><br>
-								<span>11:20 AM</span> 
-							</div>
-							<img src="img/plane2.svg">
-							<div class="arrival">
-								<span>Prague</span><br>
-								<span>13:20 PM</span> 
-							</div>
-							<div class="price">
-								<span>120 e</span>
-							</div>
-						</li>
-						<li> <h3>A12345</h3>
-							<div class="date">
-								<small>21 Dec 2015</small>
-							</div>
-						
-							<div class="departure">
-								<span>Helsinki</span><br>
-								<span>11:20 AM</span> 
-							</div>
-							<img src="img/plane2.svg">
-							<div class="arrival">
-								<span>Prague</span><br>
-								<span>13:20 PM</span> 
-							</div>
-							<div class="price">
-								<span>120 e</span>
+								<span>{{flights.price}} e</span>
 							</div>
 						</li>
 					</ul>
