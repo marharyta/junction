@@ -12,7 +12,7 @@ angular
 		var controller = function($scope){
 
 	//flight list
-		$scope.items = [{
+		$scope.flights = [{
 
 				id: "A12345",
 			    from: 'Helsinki',
@@ -28,7 +28,7 @@ angular
 		  {
 		  
 		  		id: "A12345",
-			    from: 'Helsinki',
+			    from: 'Prague',
 			    to: "Prague",
 			    date: "21 Dec 2015",
 			    departure: "11:20 AM",
@@ -42,7 +42,7 @@ angular
 		  {
 			  
 				id: "A12345",
-			    from: 'Helsinki',
+			    from: 'Budapest',
 			    to: "Prague",
 			    date: "21 Dec 2015",
 			    departure: "11:20 AM",
@@ -55,7 +55,7 @@ angular
 		  {
 			  
 				id: "A12345",
-			    from: 'Helsinki',
+			    from: 'Milan',
 			    to: "Prague",
 			    date: "21 Dec 2015",
 			    departure: "11:20 AM",

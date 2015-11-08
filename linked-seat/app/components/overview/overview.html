@@ -2,16 +2,32 @@
 	<div class="col-lg-8 col-lg-offset-2 col-md-12">
 		<div class="overview">
 			<h1>Overview flight</h1>
-			<div class="flight-info" ng-repeat="item in items">
+			<div class="flight-info" ng-repeat="">
 				
-			<h2>{{item.flight1.id}} </h2>
+				<h2>{{flights.id}} </h2>
+
+				<div class="date">
+								<small>{{flights.date}}</small>
+							</div>
+							<div class="departure">
+								<span>{{flights.from}}</span><br>
+								<span>{{flights.daparture}}</span> 
+							</div>
+							<img src="img/plane2.svg">
+							<div class="arrival">
+								<span>{{flights.to}}</span><br>
+								<span>{{flights.arrival}}</span> 
+							</div>
+							<div class="price">
+								<span>{{flights.price}} e</span>
+							</div>
+					
 
 			</div>
-			<div class="flight-info" ng-repeat="item in items">
-				
-			<h2>{{item.flight2.id}} </h2>
 
-			</div>
+			<div class="next" ng-onclick="clickControlling()">
+						<a href="#/view6"><img src="img/next.svg"></a>
+					</div>
 		</div>
 	</div>
 </div>

@@ -74,6 +74,12 @@ angular
 
 		}
 	})
-	.controller('setOptions', function(){
-		
-	})
+	.controller('clickController', function clickControlling($scope) {
+
+   			$scope.myVar = true;
+   			$scope.toggle = function() {
+		        $scope.myVar = !$scope.myVar;
+		    }
+
+		}
+		);

@@ -8,12 +8,6 @@
 
 angular
 	.module('myApp.flight', ['ngRoute'])
-	.config(['$routeProvider', function($routeProvider) {
-  	$routeProvider.when('/components/flight', {
-    templateUrl: 'components/flight/flight.html',
-    controller: 'components/flight'
-  });
-}])
 	.directive('flightList', function() {
 		var controller = function($scope){
 
@@ -142,4 +136,16 @@ angular
 				
 		  }];
 
-});
+
+
+})
+
+.controller('clickController', function clickControlling($scope) {
+
+   			$scope.myVar = true;
+   			$scope.toggle = function() {
+		        $scope.myVar = !$scope.myVar;
+		    }
+
+		}
+		);
