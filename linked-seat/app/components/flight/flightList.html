@@ -1,14 +1,12 @@
 <div class="row" ng-controller="clickController">
 	<div class="col-lg-12 col-md-12">
-
-		
 		<div class="row" ng-show="myVar">
 			<div class="col-lg-8 col-lg-offset-2 col-md-12">
-				<h1>Book flight</h1>
 				<div class=" row findFlight">
+					<h1 class="text-center">Book flight</h1>
 					<form class="col-lg-6 from" ng-controller="selectFlight">
 						<img src="img/plane1.svg">
-						<span>From:</span><br>
+						<span class="color">From:</span><br>
 						<input type="text" list="flights" name="flightFrom" name="from" value="Helsinki">
 						<datalist id="flights">
 						    <option ng-repeat="item in flights track by $index" ng-click="setChange(flight)" ng-model="flight.from" ng-change="change()"
@@ -17,16 +15,16 @@
 					</form> 
 					<form class="col-lg-6 to" ng-controller="selectFlight">
 						<img src="img/plane1.svg">
-						<span>To:</span><br>
-						<input type="text" list="flights" name="flightTo" name="to" value="Prague" ng-model="flight.to" ng-change="change()">
+						<span class="color">To:</span><br>
+						<input type="text" list="flights" name="flightTo" value="Prague" ng-model="destination" ng-change="change()">
 						<datalist id="flights">
 						    <option ng-repeat="item in flights track by $index" ng-click="setChange(flight)"
-                             value="{{flights.to}}">
+                             value="{{flight.to}}">
 						  </datalist>
 					</form> 
 					<!--<button id="search" onclick="searchClick()"> Search</button>-->
 					<div class="next">
-						<img ng-click="toggle()" src="img/next.svg">
+						<img ng-click="toggle()" src="img/next.svg" class="animated shake" id="next-button">
 					</div>
 				</div>
 			</div>
@@ -36,29 +34,31 @@
 		<!--Show search results -->
 		<div class="row" id="searchResult" ng-hide="myVar">
 			<div class="col-lg-8 col-lg-offset-2 col-md-6">
+
 				<div class="listOfREsults">
+					<h1 class="text-center">Book flight</h1>
 					<ul>
-						<li ng-repeat="flight in flights"> <h3>{{flights.id}}</h3>
+						<li ng-repeat="flight in flights | filter: filterCity() " class="option"> <h3>{{flight.id}}</h3>
 							<div class="date">
-								<small>{{flights.date}}</small>
+								<small>{{flight.date}}</small>
 							</div>
 							<div class="departure">
-								<span>{{flights.from}}</span><br>
-								<span>{{flights.daparture}}</span> 
+								<span>{{flight.from}}</span><br>
+								<span>{{flight.departure}}</span> 
 							</div>
 							<img src="img/plane2.svg">
 							<div class="arrival">
-								<span>{{flights.to}}</span><br>
-								<span>{{flights.arrival}}</span> 
+								<span>{{flight.to}}</span><br>
+								<span>{{flight.arrival}}</span> 
 							</div>
 							<div class="price">
-								<span>{{flights.price}} e</span>
+								<span class="color">{{flight.price}} e</span>
 							</div>
 						</li>
 					</ul>
 					<!--<button id="continue">Continue</button>-->
 					<div class="next">
-						 <a href="#/view3"><img src="img/next.svg"></a>
+						 <a href="#/view3"><img class="animated shake" src="img/next.svg"></a>
 						
 					</div>
 				</div>

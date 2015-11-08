@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" ng-controller="selectFlights" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,19 +14,21 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">-->
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" type="text/css" href="css/scss/main_style.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto|Lato|Oxygen' rel='stylesheet' type='text/css'>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
+ <!-- <ul class="menu">
     <li><a href="#/view1">Login</a></li>
     <li><a href="#/view2">BookFlight</a></li>
     <li><a href="#/view3">Shoose seat</a></li>
      <li><a href="#/view5">Login</a></li>
     <li><a href="#/view6">BookFlight</a></li>
     
-  </ul>
+  </ul>-->
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -61,6 +63,7 @@
   <script src="components/flightOptions/flightOptions.js"></script>
   <script src="components/check-in/check-in.js"></script>
   <script src="components/matches/matches.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>

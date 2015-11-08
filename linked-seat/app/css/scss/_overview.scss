@@ -1,0 +1,56 @@
+.overview{
+	background-color: rgba(240, 240, 243, 0.68);
+		border-radius: 25px; 
+		padding: 20px;
+		box-shadow: 1px -2px 5px grey; 
+		font-family: 'Arvo', serif;
+		min-height: 50vh; 
+}
+
+.flight-info{
+
+	width: 80%;
+	display: block;
+	margin: 0px auto;
+	display: inline-block;
+	margin-right: 5%;
+	margin-bottom: 30px;
+	border-right: dotted;
+	border-bottom: 1px dotted black;
+	border-size: 2px;
+		.date{
+				margin-bottom: 20px;
+			}
+
+			.name{
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
+				.departure{
+					display: inline-block;
+					
+						font-size: 20px;
+						font-weight: 500;
+					
+				}
+				.arrival{
+					display: inline-block;
+					
+						font-size: 20px;
+						font-weight: 500;
+				}
+
+				.price{
+					margin-top: 10px;
+					font-size: 24px;
+						font-weight: 500;
+						margin-bottom: 20px;
+				}
+
+				img{
+					max-width: 60px;
+					position: relative;
+					margin: 20px 10px;
+					top: -10px;
+				}
+}

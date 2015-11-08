@@ -20,6 +20,79 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);*/
 
+function flightsFactory ($rootScope) {
+  var controller = function($rootScope){
+
+    $rootScope.flights = [{
+
+        id: "A12345",
+          from: "Helsinki",
+          to: "Prague",
+          date: "21 Dec 2015",
+          departure: "11:20 AM",
+          arrival: "13:20 PM",
+          price: 678,
+          description: 'first-class',
+          status: "free"
+    
+      },
+      {
+      
+          id: "A12345",
+          from: "Prague",
+          to: "Prague",
+          date: "21 Dec 2015",
+          departure: "11:20 AM",
+          arrival: "13:20 PM",
+          price: 678,
+          description: 'first-class',
+          status: "free"
+        
+        
+      },
+      {
+        
+        id: "A12345",
+          from: "Budapest",
+          to: "Prague",
+          date: "21 Dec 2015",
+          departure: "11:20 AM",
+          arrival: "13:20 PM",
+          price: 678,
+          description: 'first-class',
+          status: "free"
+        
+      },
+      {
+        
+        id: "A12345",
+          from: "Milan",
+          to: "Prague",
+          date: "21 Dec 2015",
+          departure: "11:20 AM",
+          arrival: "13:20 PM",
+          price: 678,
+          description: 'first-class',
+          status: "free"
+        
+      }];
+
+
+
+      //
+
+    };
+
+    return {
+      scope: {},
+      templateUrl: 'components/flight/flightList.html',
+      link: controller
+      //controller of the scope in productList.html is the var controller created above
+
+    }
+  };
+
+
 
 var app = angular.module('myApp', [
   'ngRoute',
@@ -50,13 +123,6 @@ app
 
 }); 
 
-app.factory('getUserData', function () {
+app.service('flightsFactory', flightsFactory);
 
-    var factory = {};
-
-    factory.getUser = function () {
-        //..
-    }
-
-    return factory;
-});
+app.controller('selectFlights', flightsFactory);

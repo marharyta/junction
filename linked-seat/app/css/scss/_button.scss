@@ -25,15 +25,66 @@ button{
 	}
 	*/
 
+
+
 	.next{
 		display: block;
 		margin: 0px auto;
+		margin-bottom: 30px;
 		img{
 			display: block;
 			display: block;
-		margin: 0px auto;
-		max-width: 40px;
-		max-height: 40px;
-		
+			margin: 0px auto;
+			max-width: 40px;
+			max-height: 40px;
+   
 		}
 	}
+#next-button {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 5s;
+
+  animation-duration: 2s;
+  animation-delay: 5s;
+ 
+}
+
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  5%, 15%, 25%, 35% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  10%, 20%, 30% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  5%, 15%, 25%, 35%{
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  10%, 20%, 30%{
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}

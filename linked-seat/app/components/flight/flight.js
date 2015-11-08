@@ -8,14 +8,14 @@
 
 angular
 	.module('myApp.flight', ['ngRoute'])
-	.directive('flightList', function() {
-		var controller = function($scope){
+	.directive('flightList', function() {	
+	var controller = function($scope){
 
-	//flight list
+	
 		$scope.flights = [{
 
 				id: "A12345",
-			    from: 'Helsinki',
+			    from: "Helsinki",
 			    to: "Prague",
 			    date: "21 Dec 2015",
 			    departure: "11:20 AM",
@@ -28,7 +28,7 @@ angular
 		  {
 		  
 		  		id: "A12345",
-			    from: 'Prague',
+			    from: "Prague",
 			    to: "Prague",
 			    date: "21 Dec 2015",
 			    departure: "11:20 AM",
@@ -42,7 +42,7 @@ angular
 		  {
 			  
 				id: "A12345",
-			    from: 'Budapest',
+			    from: "Budapest",
 			    to: "Prague",
 			    date: "21 Dec 2015",
 			    departure: "11:20 AM",
@@ -55,7 +55,7 @@ angular
 		  {
 			  
 				id: "A12345",
-			    from: 'Milan',
+			    from: "Milan",
 			    to: "Prague",
 			    date: "21 Dec 2015",
 			    departure: "11:20 AM",
@@ -148,4 +148,5 @@ angular
 		    }
 
 		}
-		);
+
+);

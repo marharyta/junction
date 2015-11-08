@@ -44,8 +44,8 @@
   border-radius: 25px;
   box-shadow: 1px -1px 1px grey;
   padding: 20px;
-  margin-top: 20px;
-  min-height: 50vh; }
+  margin-top: 60px;
+  min-height: 60vh; }
   .findFlight .from {
     position: relative;
     left: 50px; }
@@ -88,7 +88,8 @@
   padding: 20px;
   box-shadow: 1px -2px 5px grey;
   font-family: 'Arvo', serif;
-  min-height: 50vh; }
+  min-height: 60vh;
+  margin-top: 60px; }
   .listOfREsults ul {
     margin-bottom: 30px; }
     .listOfREsults ul li {
@@ -99,7 +100,8 @@
       margin-bottom: 10px;
       border-right: dotted;
       border-bottom: 1px dotted black;
-      border-size: 2px; }
+      border-size: 2px;
+      padding-left: 10px; }
       .listOfREsults ul li h3 {
         margin-bottom: 3px; }
       .listOfREsults ul li .date {
@@ -121,6 +123,10 @@
         position: relative;
         padding: 0px 3px;
         top: -10px; }
+    .listOfREsults ul li:hover {
+      background-color: #F5F5F5; }
+    .listOfREsults ul li:visited {
+      background-color: #F5F5F5; }
 
 #continue {
   margin: 30px auto 30px auto;
@@ -146,7 +152,8 @@
   border-radius: 25px;
   padding: 20px;
   box-shadow: 1px -2px 5px grey;
-  min-height: 50vh; }
+  min-height: 60vh;
+  margin-top: 60px; }
   .flightOpt div {
     padding: 20px;
     display: block; }
@@ -174,7 +181,8 @@
   border-radius: 25px;
   padding: 20px;
   box-shadow: 1px -2px 5px grey;
-  min-height: 50vh; }
+  min-height: 50vh;
+  margin-top: 40px; }
 
 button {
   margin: 0px auto 30px auto;
@@ -202,13 +210,46 @@ button {
 	*/
 .next {
   display: block;
-  margin: 0px auto; }
+  margin: 0px auto;
+  margin-bottom: 30px; }
   .next img {
     display: block;
     display: block;
     margin: 0px auto;
     max-width: 40px;
     max-height: 40px; }
+
+#next-button {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s; }
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  5%, 15%, 25%, 35% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  10%, 20%, 30% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); } }
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  5%, 15%, 25%, 35% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  10%, 20%, 30% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); } }
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake; }
 
 .person {
   display: block;
@@ -228,7 +269,9 @@ button {
     margin-top: 15px; }
 
 .chat {
-  margin-top: 40px
+  margin-top: 40px;
+  color: white;
+  font-size: 24px
   	/*button{
   		margin-right: 60px;
   	}
@@ -238,10 +281,63 @@ button {
   	}*/ }
 
 h1, h2, h3, h4 {
-  font-family: Roboto, sans-serif; }
+  font-family: Roboto, sans-serif;
+  color: rgba(41, 171, 155, 0.85); }
 
 a {
   color: black;
   text-decoration: underline; }
+
+.color {
+  color: rgba(41, 171, 155, 0.85);
+  font-size: 20px; }
+
+.name_color {
+  color: white; }
+
+.green {
+  color: rgba(41, 171, 155, 0.85); }
+
+.overview {
+  background-color: rgba(240, 240, 243, 0.68);
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 1px -2px 5px grey;
+  font-family: 'Arvo', serif;
+  min-height: 50vh; }
+
+.flight-info {
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+  display: inline-block;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  border-right: dotted;
+  border-bottom: 1px dotted black;
+  border-size: 2px; }
+  .flight-info .date {
+    margin-bottom: 20px; }
+  .flight-info .name {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .flight-info .departure {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500; }
+  .flight-info .arrival {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500; }
+  .flight-info .price {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px; }
+  .flight-info img {
+    max-width: 60px;
+    position: relative;
+    margin: 20px 10px;
+    top: -10px; }
 
 /*# sourceMappingURL=main_style.css.map */

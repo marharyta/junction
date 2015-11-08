@@ -2,31 +2,34 @@
 	<div class="col-lg-8 col-lg-offset-2 col-md-12">
 		<div class="overview">
 			<h1>Overview flight</h1>
-			<div class="flight-info" ng-repeat="">
+			<div class="flight-info text-left">
 				
-				<h2>{{flights.id}} </h2>
+				<h2>A12235 </h2>
 
 				<div class="date">
-								<small>{{flights.date}}</small>
-							</div>
-							<div class="departure">
-								<span>{{flights.from}}</span><br>
-								<span>{{flights.daparture}}</span> 
-							</div>
-							<img src="img/plane2.svg">
-							<div class="arrival">
-								<span>{{flights.to}}</span><br>
-								<span>{{flights.arrival}}</span> 
-							</div>
-							<div class="price">
-								<span>{{flights.price}} e</span>
-							</div>
+					<small>21 Dec 2015</small>
+				</div>
+				<div class="name">
+					<span>Anna Johanson</span>
+				</div>
+				<div class="departure">
+					<span>Helsinki</span><br>
+					<span>11:20 AM</span> 
+				</div>
+				<img src="img/plane5.png">
+				<div class="arrival">
+					<span>Prague</span><br>
+					<span>13:20 PM</span> 
+				</div>
+				<div class="price">
+					<span class="color">450 e</span>
+				</div>
 					
 
 			</div>
 
 			<div class="next" ng-onclick="clickControlling()">
-						<a href="#/view6"><img src="img/next.svg"></a>
+						<a href="#/view6"><img class="animated shake"src="img/next.svg"></a>
 					</div>
 		</div>
 	</div>
